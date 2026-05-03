@@ -75,3 +75,59 @@ public class MergeSort {
 	}
 
 }
+
+
+// optimal
+
+
+//static void mergeSort(int start, int end, int[] arr) {
+//
+//	if(start >= end) {
+//		return;
+//	}
+//
+//	int mid = (start + end) / 2;
+//	mergeSort(start, mid, arr);
+//	mergeSort(mid + 1, end, arr);
+//	merge(start, mid, end, arr);
+//}
+//
+//static public void merge(int start, int mid, int end, int[] arr) {
+//
+//
+//	int[] temp = new int[end - start + 1];
+//
+//
+//	int i= start;
+//	int j=mid + 1;
+//
+//	int k = 0;
+//
+//	while(i<= mid && j<= end) {
+//		if(arr[i] <= arr[j]) {
+//			temp[k++] = arr[i];
+//			i++;
+//		}
+//		else {
+//			temp[k++] = arr[j];
+//			j++;
+//		}
+//	}
+//
+//	while(i<= mid) {
+//		temp[k++] = arr[i++];
+//
+//	}
+//
+//	while(j<= end) {
+//		temp[k++] = arr[j++];
+//	}
+//
+//
+//	int a = start;
+//	int b = 0;
+//
+//	while(a<= end && b <= temp.length - 1) {
+//		arr[a++] = temp[b++];
+//	}
+//}
