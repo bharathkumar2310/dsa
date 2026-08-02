@@ -32,3 +32,6 @@ class L12_Print_All_Permutations {
 
     }
 }
+
+//TC : O(n * n!) // totoal permutation = n! and we are runnning j=0---> n
+//SC : O(n)

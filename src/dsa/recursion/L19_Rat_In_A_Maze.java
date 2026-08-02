@@ -38,3 +38,6 @@ class L19_Rat_In_A_Maze {
         }
     }
 }
+
+//TC : O(3^(n^2))
+//SC : O(n^2)

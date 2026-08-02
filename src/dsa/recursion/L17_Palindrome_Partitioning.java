@@ -42,7 +42,16 @@ class L17_Palindrome_Partitioning {
 }
 
 
+
+//Generating all partitions:
+//At each position, you can either cut or not cut.
+//This leads to about 2^(n-1) possible partitions.
+//Checking palindromes:
+//isPalindrome(i, j) takes O(n) in the worst case.
+
 //TC : O(n*(2^n))
 //SC : O(n)
 //   : O(n*(2^n))  ---> if output is included
 
+
+//IF you want to reduce the n first itself compute the isPlaindrome and save it in a dp[]
