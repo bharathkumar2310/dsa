@@ -16,6 +16,7 @@ class L8_Longest_Repeating_Character_Replacement {
             if(total - maxCount > k) {
                 alp[s.charAt(left) - 'A']--;
                 maxCount = 0;
+
                 for(int i=0; i<26; i++) {
                     maxCount = Math.max(maxCount, alp[i]);
                 }

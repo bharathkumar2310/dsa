@@ -23,11 +23,6 @@ public class L14_Set_Matrix_Zero {
             }
         }
 
-        for(int j=1; j<matrix[0].length; j++) {
-            if(row0 == 0) {
-                matrix[0][j] = 0;
-            }
-        }
 
         for(int i=0; i<matrix.length; i++) {
             if(matrix[0][0] == 0) {
@@ -35,8 +30,11 @@ public class L14_Set_Matrix_Zero {
             }
         }
 
-        if(row0 == 0) {
-            matrix[0][0] = 0;
+
+        for(int j=0; j<matrix[0].length; j++) {
+            if(row0 == 0) {
+                matrix[0][j] = 0;
+            }
         }
     }
 }
